@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="username">
+            <span>username: </span>
+            <input type="text" name="username" id="username" />
+        </label>
+        <br>
+        <label for="password">
+            <span>password: </span>
+            <input type="password" name="password" id="password" />
+        </label>
+        <br>
+
+        <label for="city">
+            <span>city</span>
+            <input type="text" name="city" id="city" />
+        </label>
+        <br>
+
+        <label for="web server">
+            <span>choose web server: </span>
+            <select name="web server" id="web_server">
+                <option value="aws" selected>amazon aws</option>
+                <option value="cloudfare">cloudfare</option>
+                <option value="render">render</option>
+            </select>
+        </label>
+        <br>
+
+        <label for="role">
+            <span>Role: </span>
+            <br>
+            <label for="Admin">
+                <span>Admin: </span>
+                <input type="radio" name="radio" id="Admin" value="Admin" />
+            </label>
+            <br>
+
+            <label for="Engineer">
+                <span>Engineer: </span>
+                <input type="radio" name="radio" id="engineer" value="engineer" />
+            </label>
+            <br>
+
+            <label for="Guest">
+                <span>Guest:</span>
+                <input type="radio" name="radio" id="guest" value="guest" checked>
+            </label>
+        </label>
+    </form>
+</body>
+
+</html>
