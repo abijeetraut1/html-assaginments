@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #191919;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+p,
+h3 {
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-container div h1,
+.content-container div h3,
+.content-container div p {
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-container div * {
+    margin: 1rem 0;
+}
+
+.content-container h1 {
+    font-size: 2rem;
+}
+
+.content-container h3 {
+    font-size: 1rem;
+}
+
+.content-container p {
+    font-size: 1.5rem;
+    width: 50vw;
+    text-align: center;
+}
+
+.store {
+    display: flex;
+    justify-content: center;
+}
+
+.store div {
+    margin: 0 1rem;
+}
+
+.store-logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.store-logo-name div p {
+    font-size: 1rem;
+}
+
+.store-logo-name * {
+    color: white;
+}
+
+.store-logo-name i {
+    font-size: 2rem;
+    color: white;
+    margin: 0 .5rem;
+}
+
+/* intro container */
+.intro-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-content {
+    width: 40vw;
+    text-align: left;
+    margin-top: 1.2rem;
+}
+
+/* footer */
+.footer {
+    background-color: #191919;
+    height: 30vh;
+}
+
+.footer * {
+    color: white;
+}
+
+.company-title {
+    width: fit-content;
+    position: absolute;
+    object-fit: contain;
+}
+
+
+.social-medias div{
+    background-color: gray;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+}
+
+.social-medias{
+    display: flex;
+    justify-content: center;
+}
+.social-medias div i{
+    font-size: 2rem;
+    color: white;
+}
+
+.explore, .brand-content h1, .brand-content p{
+    margin: 1rem 0;
+}
+.explore{
+    padding: 1rem 3rem;
+}
+
+.store-logo-name{
+    cursor: pointer;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #191919;
+    border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #202020;
+}
