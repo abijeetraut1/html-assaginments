@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        /* Add some basic styling for readability */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Student Registration</legend>
+
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Biology">Biology</option>
+                <option value="History">History</option>
+            </select>
+
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+
+
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
