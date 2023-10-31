@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="200" style="border: 1px solid black;"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // // default fill style is black
+        // ctx.fillStyle = "#fff";
+
+        // // ctx.fillRect(x, y, width, height);
+        // ctx.fillRect(0, 0, 200, 200);
+
+        // // defines the staring point of the line  
+        // ctx.moveTo(10, 10);
+
+        // // defines the ending point of the line
+        // ctx.lineTo(200, 100);
+
+        // // stroke means like now you can draw
+        // ctx.lineWidth = 10;
+        // ctx.strokeStyle = "red";
+        // ctx.lineCap = "butt";
+        // ctx.stroke();
+
+        // ctx.beginPath();  // starting oath
+
+        // prism
+        // ctx.moveTo(20, 20);
+        // ctx.lineTo(x, y);
+        // ctx.lineTo(100, 20);
+        // ctx.lineTo(175, 100);
+        // ctx.lineTo(20, 100);
+        // ctx.lineTo(20, 20);
+
+        // triangle
+        // ctx.moveTo(100, 20);
+        // ctx.lineTo(175, 100);
+        // ctx.lineTo(20, 100);
+        // ctx.lineTo(100, 20);
+
+        // rectangle
+        // ctx.moveTo(10, 10);
+        // ctx.lineTo(100, 10);
+        // ctx.lineTo(100, 100);
+        // ctx.lineTo(10, 100);
+        // ctx.lineTo(10, 10);
+
+        // triangle inside of square
+        // ctx.moveTo(100, 0);
+        // ctx.lineTo(0, 200);
+        // ctx.lineTo(200, 200);
+        // ctx.lineTo(100, 0);
+
+        // drawing rectangle using ract function
+        ctx.beginPath();
+
+        // ctx.rect(x, y, width, height);
+        ctx.rect(0, 0, 200, 50);
+
+        ctx.strokeStyle = "red";
+        ctx.lineCap = "round";
+        ctx.stroke();
+
+    </script>
+
+
+    <canvas id="circleCanvas" width="200" height="200" style="border: 1px solid black;"></canvas>
+
+
+    <script>
+        const newcanvas = document.getElementById("circleCanvas");
+        const newctx = newcanvas.getContext("2d");
+
+        newctx.beginPath();
+        // newCtx.arc(x, y, r, startAngle, endAngle);
+        newctx.arc(90, 50, 40, 0, 2 * Math.PI);
+        newctx.stroke();
+    </script>
+
+    <canvas id="newRectangle" height="200" width="400" style="border: 1px solid black;"></canvas>
+
+
+    <script>
+        const canvas1 = document.getElementById("newRectangle");
+        const ctx1 = canvas1.getContext("2d");
+
+        ctx1.beginPath(0,0);
+
+        ctx1.rect(10, 10, 380, 180);
+        ctx1.lineWidth = 6;
+        ctx1.strokeStyle = "red";
+        
+        ctx1.stroke();
+
+        ctx1.beginPath(0,0);
+        ctx1.rect(40, 40, 80, 80);
+        ctx1.strokeStyle = "green";
+        ctx1.stroke();
+
+        ctx1.beginPath(0, 0);
+        ctx1.rect(70, 70, 200, 100);
+        ctx1.strokeWidth = 8;
+        ctx1.strokeStyle = "blue";
+        ctx1.stroke();
+
+
+    </script>
+</body>
+
+</html>
